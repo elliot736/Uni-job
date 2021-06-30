@@ -1,0 +1,38 @@
+:root {
+  --primary-color: hsl(341, 88%, 47%);
+  --bg-color: hsl(0, 0%, 100%);
+  --text-gray: hsl(180, 8%, 52%);
+  --text-dark: hsl(180, 14%, 20%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background: var(--bg-color);
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 0.05s ease-in-out;
+}
+
+button:active {
+  border: 1px solid var(--primary-color) !important;
+  box-shadow: 2px 2px 0px var(--primary-color);
+  outline: none;
+}
+
+button:focus {
+  border: 2px solid var(--primary-color);
+}

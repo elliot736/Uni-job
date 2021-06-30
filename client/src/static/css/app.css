@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+}
+.child {
+  margin-bottom: 14%;
+}
+.cards-container {
+  margin: auto 28%;
+  width: 88%;
+}
+
+.p-found {
+  margin: -3%;
+  text-align: center;
+}

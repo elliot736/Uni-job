@@ -1,0 +1,85 @@
+:root {
+  --clr-primary: #6aeeb5;
+  --clr-primary-hover: #29e6a7;
+  --clr-primary-dark: #039d69;
+
+  --clr-gray100: #f0f7f8;
+  --clr-gray200: #cfd8dc;
+  --radius: 0.2rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background: var(--clr-gray100);
+}
+
+.icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  color: #29e6a7;
+}
+.navbar {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 100;
+}
+.nav-list {
+  background: white;
+  box-shadow: 0px 0px 10px var(--clr-gray200);
+  margin: 0;
+  padding: 1rem 0;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  background: var(--clr-primary);
+  border: none;
+  outline: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.nav-item a:hover {
+  background: var(--clr-primary-hover);
+}
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.logo {
+  display: inline-block;
+  width: 1em;
+  font-size: 2rem;
+
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  color: #29e6a7;
+}

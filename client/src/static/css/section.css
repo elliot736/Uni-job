@@ -1,0 +1,12 @@
+.section {
+  display: block;
+  overflow: auto;
+  min-height: 100vh;
+  padding-top: 28vh;
+  background: #f5f4f5;
+  color: rgb(0, 0, 0);
+}
+
+.sec-header {
+  text-align: center;
+}

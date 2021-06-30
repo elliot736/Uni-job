@@ -1,0 +1,210 @@
+/* .container-search {
+  font-family: "Convergence", sans-serif;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+} */
+
+:focus {
+  outline: none;
+}
+
+.row {
+  display: flex;
+
+  justify-content: space-around;
+}
+.container-search {
+  display: flex;
+  margin-top: 100px;
+
+  flex-wrap: nowrap;
+  position: absolute;
+}
+.col-3 {
+  margin-right: 50px;
+  position: relative;
+}
+.col {
+  margin-top: 7px;
+}
+/* necessary to give position: relative to parent. */
+input[type="text"] {
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.effect-7,
+.effect-8,
+.effect-9 {
+  border: 1px solid #ccc;
+  padding: 7px 14px 9px;
+  transition: 0.4s;
+}
+
+.effect-7 ~ .focus-border:before,
+.effect-7 ~ .focus-border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #3399ff;
+  transition: 0.4s;
+}
+.effect-7 ~ .focus-border:after {
+  top: auto;
+  bottom: 0;
+}
+.effect-7 ~ .focus-border i:before,
+.effect-7 ~ .focus-border i:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background-color: #3399ff;
+  transition: 0.6s;
+}
+.effect-7 ~ .focus-border i:after {
+  left: auto;
+  right: 0;
+}
+.effect-7:focus ~ .focus-border:before,
+.effect-7:focus ~ .focus-border:after {
+  left: 0;
+  width: 100%;
+  transition: 0.4s;
+}
+.effect-7:focus ~ .focus-border i:before,
+.effect-7:focus ~ .focus-border i:after {
+  top: 0;
+  height: 100%;
+  transition: 0.6s;
+}
+
+.effect-8 ~ .focus-border:before,
+.effect-8 ~ .focus-border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3399ff;
+  transition: 0.3s;
+}
+.effect-8 ~ .focus-border:after {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+.effect-8 ~ .focus-border i:before,
+.effect-8 ~ .focus-border i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background-color: #3399ff;
+  transition: 0.4s;
+}
+.effect-8 ~ .focus-border i:after {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.effect-8:focus ~ .focus-border:before,
+.effect-8:focus ~ .focus-border:after {
+  width: 100%;
+  transition: 0.3s;
+}
+.effect-8:focus ~ .focus-border i:before,
+.effect-8:focus ~ .focus-border i:after {
+  height: 100%;
+  transition: 0.4s;
+}
+
+.effect-9 ~ .focus-border:before,
+.effect-9 ~ .focus-border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3399ff;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+}
+.effect-9 ~ .focus-border:after {
+  top: auto;
+  bottom: 0;
+  right: auto;
+  left: 0;
+  transition-delay: 0.6s;
+}
+.effect-9 ~ .focus-border i:before,
+.effect-9 ~ .focus-border i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background-color: #3399ff;
+  transition: 0.2s;
+}
+.effect-9 ~ .focus-border i:after {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+  transition-delay: 0.4s;
+}
+.effect-9:focus ~ .focus-border:before,
+.effect-9:focus ~ .focus-border:after {
+  width: 100%;
+  transition: 0.2s;
+  transition-delay: 0.6s;
+}
+.effect-9:focus ~ .focus-border:after {
+  transition-delay: 0.2s;
+}
+.effect-9:focus ~ .focus-border i:before,
+.effect-9:focus ~ .focus-border i:after {
+  height: 100%;
+  transition: 0.2s;
+}
+.effect-9:focus ~ .focus-border i:after {
+  transition-delay: 0.4s;
+}
+
+/*= input focus effects css End
+=============================== */
+
+.btn-primary {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  background: #6aeeb5;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  position: absolute;
+}
+
+.btn-primary:hover {
+  background: #29e6a7;
+}

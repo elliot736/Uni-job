@@ -1,0 +1,111 @@
+body {
+  background: #f5f4f5;
+}
+
+.card {
+  flex-direction: row;
+  margin: 0 auto;
+  width: 50%;
+  border: 2px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  flex: 1 1 200px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.icon-briefcase {
+  height: 37px;
+  width: 37px;
+  padding: 0 20px;
+}
+.content-card {
+  display: flex;
+  flex-direction: column;
+}
+.header-card {
+  display: flex;
+  flex-direction: row;
+}
+.details-card {
+  display: flex;
+  flex-direction: row;
+}
+.chips {
+  margin-left: 2rem;
+}
+.chips span {
+  padding: 3px 11px;
+  bottom: -35%;
+  position: relative;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
+}
+.loc {
+  background: black;
+}
+.date {
+  background-color: indigo;
+}
+.header-card h2 {
+  color: hsl(341, 88%, 47%);
+}
+.company h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: hsl(180, 14%, 20%);
+}
+.details-card {
+  margin-top: -3%;
+}
+.summary p {
+  font-size: 1.2rem;
+  padding: 10px;
+
+  color: hsl(180, 8%, 52%);
+}
+.button-card a {
+  text-decoration: none;
+}
+
+.button-card a:active {
+  text-decoration: none;
+}
+.btn-card {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  background: #6aeeb5;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  position: relative;
+}
+
+.btn-card:hover {
+  background: #29e6a7;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /*grid-template-columns: repeat(auto-fill, minmax(200px 1fr));*/
+  grid-gap: 20px;
+}

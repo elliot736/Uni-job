@@ -1,0 +1,230 @@
+:root {
+  --primary-color: hsl(341, 88%, 47%);
+  --bg-color: hsl(0, 0%, 100%);
+  --text-gray: hsl(180, 8%, 52%);
+  --text-dark: hsl(180, 14%, 20%);
+}
+.Card {
+  position: relative;
+  width: 50%;
+  padding: 15px;
+  margin-bottom: 45px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.Card.is-featured {
+  border-left: var(--primary-color) 5px solid;
+}
+
+.Card-picture {
+  position: absolute;
+  top: -25px;
+  margin: 0;
+  padding: 0;
+}
+
+.Card-picture img {
+  width: 50px;
+  height: 50px;
+}
+
+.Card-header {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.Card-header > p {
+  margin-right: 15px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+.Card-status {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.Card-status span {
+  margin-right: 5px;
+  padding: 5px 8px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+}
+
+.status-new {
+  background: var(--primary-color);
+}
+
+.status-featured {
+  background: var(--text-dark);
+}
+.Card-info {
+  display: flex;
+  flex-direction: column;
+}
+.Card-info strong {
+  text-align: left !important;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+}
+
+.Card-info-details {
+  display: flex;
+  color: var(--text-gray);
+  font-size: 1.2rem;
+}
+
+.Card-info-details p:not(:first-child)::before {
+  margin: 0 4px;
+  content: "·";
+  font-weight: bold;
+}
+
+.Card-tags {
+  padding-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--text-gray);
+}
+
+.Card-tags button {
+  padding: 4px 6px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 2px;
+  background: var(--bg-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: none;
+  transition: all 0.08s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.Card-tags button:hover {
+  border: 1px solid var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .Card {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Card-content {
+    display: flex;
+    display: relative;
+    align-items: center;
+    width: 83%;
+  }
+
+  .Card-picture {
+    position: static;
+    margin: 0 15px 0 0;
+    padding: 0;
+  }
+
+  .Card-picture img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .Card-tags {
+    border-top: none;
+    justify-content: flex-end;
+  }
+
+  .Card-header {
+    margin-bottom: 8px;
+  }
+
+  .Card-header p {
+    margin: 0 8px 0 0;
+  }
+
+  .Card-info-details p {
+    margin-top: 8px;
+  }
+
+  .Card-tags button {
+    padding: 6px 8px;
+    font-size: 1.4rem;
+  }
+}
+
+/* .flex-container { */
+/* display: flex; */
+/* justify-content: center; */
+/* align-items: center; */
+/* } */
+/* .flex-container {
+  justify-content: flex-end;
+}
+
+.absolute {
+  position: absolute;
+} */
+
+.url a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.url a:active {
+  text-decoration: none;
+}
+.url a:active && a:focus {
+}
+/* 
+button:active,
+button:focus {
+  border-style: outset;
+  border: 2px solid #1b1c1d !important;
+
+  outline: none;
+}
+
+.ui.secondary.button:focus,
+.ui.secondary.buttons .button:focus {
+  background-color: #1b1c1d;
+}
+
+.ui.labeled.icon.button > .icon,
+.ui.labeled.icon.buttons > .button > .icon {
+  background-color: rgb(142 135 135 / 40%) !important;
+}
+
+i.icon,
+i.icons {
+  font-size: 20px;
+} */
+
+.btn-secondary {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  background: #6aeeb5;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  position: absolute;
+}
+
+.btn-secondary:hover {
+  background: #29e6a7;
+}
